@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./media.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>project2</title>
+  </head>
+
+  <body>
+    <div class="home">
+      <header>
+        </a><ul>
+          <li class="email"><img src="./Icons/EnvelopeOpen.svg" alt="icon" /></li>
+            <li><p>Email us at<span class="style">:example@gmail.com</span></p></li>
+              <li><a href="#"></a><img src="./Icons/facebook.svg" alt="fb"/></li>
+              <li><a href="#"></a><img src="./Icons/browser.svg" alt="browser"/></li>
+              <li><a href="#"></a><img src="./Icons/linkedin.svg" alt="Linked in"/></li>
+              <li><a href="#"></a><img src="./Icons/instagram.svg" alt="Instagram"/></li>
+              <li><a href="#"></a><img src="./Icons/behance.svg" alt="Be"/></li>
+              <li class="phone-img"><img src="./Icons/Phone.svg" alt="Phone" />
+              <li>123-4567 890</li>
+        </ul>
+      </header>
+      <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a class="hover" href="#">HOME</a></li>
+            <li><a class="hover" href="#">ABOUT US</a></li>
+            <li><a class="hover" href="#">OUR AGENTS</a></li>
+            <li><a class="hover" href="#">PROPERTIES</a></li>
+            <li><a class="hover" href="#">GALLERY</a></li>
+            <li><a class="hover" href="#">BLOG</a></li>
+            <li><a class="hover" href="#contact-us">CONTACT US</a></li>
+            <li><a class="hover" href="#">SEARCH</a></li>
+            <li><a href="#"><button>Add Listing</button></a></li>
+        </ul>
+        <ul>
+            <li><a href="#"><img src="./Icons/logo.svg" alt="logo"></a></li>
+            <li class="hideOnMobile"><a class="hover" href="#">HOME</a></li>
+            <li class="hideOnMobile"><a class="hover" href="#">ABOUT US</a></li>
+            <li class="hideOnMobile"><a class="hover" href="#">OUR AGENTS</a></li>
+            <li class="hideOnMobile"><a class="hover" href="#">PROPERTIES</a></li>
+            <li class="hideOnMobile"><a class="hover" href="#">GALLERY</a></li>
+            <li class="hideOnMobile"><a class="hover" href="#">BLOG</a></li>
+            <li class="hideOnMobile"><a class="hover" href="#contact-us">CONTACT US</a></li>
+            <li class="hideOnMobile"><a class="hover" href="#">SEARCH</a></li>
+            <li class="hideOnMobile"><a href="#"><button>Add Listing</button></a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display='flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display='none'
+        }
+    </script>
+      <div class="dream-home">
+        <h1 class="dream-home1">Find Your Dream Home</h1>
+        <p class="dream-home2">
+          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+          posuere cubilia curae; Proin sodales ultrices nulla blandit volutpat.
+        </p>
+      </div>
+    </div>
+
+    <!-- OVERLAY -->
+
+    <div class="overlay">
+      <div class="flex1">
+        <div class="button1 button-container">
+          <div class="sub-button rentbutton">
+            <button id="button1" class="toggle-button">
+              <a href="#">Rent</a>
+            </button>
+          </div>
+          <div class="sub-button salebutton">
+            <button id="button2" class="toggle-button">
+              <a href="#">Sale</a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="overlayflex">
+        <div class="flex2 toggle-container" id="container1">
+          <div class="sub-overlays">
+            <h1 class="headings">Locations1</h1>
+            <form action="#">
+              <label for="city">Select your city</label>
+              <select name="city" id="city">
+                <option class="toggle" value="New York"></option>
+                <option class="toggle" value="Paris"></option>
+                <option class="toggle" value="Tokyo"></option>
+                <option class="toggle" value="Sidney"></option>
+              </select>
+            </form>
+          </div>
+          <div class="sub-overlays">
+            <h1 class="headings">Property type1</h1>
+            <form action="#">
+              <label for="city">Select property type</label>
+              <select name="city" id="city">
+                <option class="toggle" value="Lorem"></option>
+                <option class="toggle" value="Lorem"></option>
+                <option class="toggle" value="Lorem"></option>
+                <option class="toggle" value="Lorem"></option>
+              </select>
+            </form>
+          </div>
+          <div class="sub-overlays">
+            <h1 class="headings">Rent Range1</h1>
+            <form action="#">
+              <label for="city">Select rent range</label>
+              <select name="city" id="city">
+                <option class="toggle" value="Lorem"></option>
+                <option class="toggle" value="Lorem"></option>
+                <option class="toggle" value="Lorem"></option>
+                <option class="toggle" value="Lorem"></option>
+              </select>
+            </form>
+          </div>
+          <div class="buttons">
+            <button><a href="#">Search</a></button>
+          </div>
+        </div>
+        <div class="flex2 toggle-container" id="container2">
+          <div class="sub-overlays">
+            <h1 class="headings">Locations2</h1>
+            <form action="#">
+              <label for="city">Select your city</label>
+              <select name="city" id="city">
+                <option class="toggle" value="New York"></option>
+                <option class="toggle" value="Paris"></option>
+                <option class="toggle" value="Tokyo"></option>
+                <option class="toggle" value="Sidney"></option>
+              </select>
+            </form>
+          </div>
+          <div class="sub-overlays">
+            <h1 class="headings">Property type2</h1>
+            <form action="#">
+              <label for="city">Select property type</label>
+              <select name="city" id="city">
+                <option class="toggle" value="Lorem"></option>
+                <option class="toggle" value="Lorem"></option>
+                <option class="toggle" value="Lorem"></option>
+                <option class="toggle" value="Lorem"></option>
+              </select>
+            </form>
+          </div>
+          <div class="sub-overlays">
+            <h1 class="headings">Rent Range2</h1>
+            <form action="#">
+              <label for="city">Select rent range</label>
+              <select name="city" id="city">
+                <option class="toggle" value="Lorem"></option>
+                <option class="toggle" value="Lorem"></option>
+                <option class="toggle" value="Lorem"></option>
+                <option class="toggle" value="Lorem"></option>
+              </select>
+            </form>
+          </div>
+          <div class="buttons">
+            <button><a href="#">Search</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- AREA1 -->
+
+    <section class="area-1">
+      <div class="main-flex">
+        <div class="heading">
+          <h1>Properties by Area</h1>
+        </div>
+        <div class="para">
+          <p>
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere cubilia curae; Proin sodales ultrices nulla blandit
+            volutpat.
+          </p>
+        </div>
+        <div class="grid">
+          <div class="item1">
+            <img class="imgg" src="./assets/area1/image1.png" alt="" />
+            <div class="paraa">
+              <p class="placee">Washington</p>
+              <p class="listings">25 listings</p>
+            </div>
+            <button><a href="#">View Detail</a></button>
+            <img src="./assets/rent2/MapPin.svg" alt="map" class="MapPin" />
+          </div>
+          <div class="item2">
+            <img class="imgg" src="./assets/area1/image2.png" alt="" />
+            <div class="paraa">
+              <p class="placee">Franklin</p>
+              <p class="listings">25 listings</p>
+            </div>
+            <button><a href="#">View Detail</a></button>
+            <img src="./assets/rent2/MapPin.svg" alt="map" class="MapPin" />
+          </div>
+          <div class="item3">
+            <img class="imgg" src="./assets/area1/image3.png" alt="" />
+            <div class="paraa">
+              <p class="placee">Clinton</p>
+              <p class="listings">25 listings</p>
+            </div>
+            <button><a href="#">View Detail</a></button>
+            <img src="./assets/rent2/MapPin.svg" alt="map" class="MapPin" />
+          </div>
+          <div class="item4">
+            <img class="imgg" src="./assets/area1/image4.jpeg" alt="" />
+            <div class="paraa">
+              <p class="placee">Arlington</p>
+              <p class="listings">25 listings</p>
+            </div>
+            <button><a href="#">View Detail</a></button>
+            <img src="./assets/rent2/MapPin.svg" alt="map" class="MapPin" />
+          </div>
+          <div class="item5">
+            <img class="imgg" src="./assets/area1/image5.png" alt="" />
+            <div class="paraa">
+              <p class="placee">Centerville</p>
+              <p class="listings">25 listings</p>
+            </div>
+            <button><a href="#">View Detail</a></button>
+            <img src="./assets/rent2/MapPin.svg" alt="map" class="MapPin" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AREA2 -->
+
+    <section class="area-2">
+      <div class="main-flex">
+        <h1>Properties by Area</h1>
+        <p class="mainp">
+          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+          posuere cubilia curae; Proin sodales ultrices nulla blandit volutpat.
+        </p>
+        <div class="flex">
+          <div class="sub">
+            <div class="sub-content">
+              <img src="./assets/area2/home1.svg" alt="home" />
+              <p class="p1">Sell your home</p>
+              <p class="p2">
+                We do a free evaluation to be sure you want to start selling.
+              </p>
+              <a href="#">Read more</a>
+            </div>
+          </div>
+          <div class="sub">
+            <div class="sub-content">
+              <img src="./assets/area2/home2.svg" alt="home" />
+              <p class="p1">Rent your home</p>
+              <p class="p2">
+                We do a free evaluation to be sure you want to start selling.
+              </p>
+              <a href="#">Read more</a>
+            </div>
+          </div>
+          <div class="sub">
+            <div class="sub-content">
+              <img src="./assets/area2/home3.svg" alt="home" />
+              <p class="p1">Buy a home</p>
+              <p class="p2">
+                We do a free evaluation to be sure you want to start selling.
+              </p>
+              <a href="#">Read more</a>
+            </div>
+          </div>
+          <div class="sub">
+            <div class="sub-content">
+              <img src="./assets/area2/home4.svg" alt="home" />
+              <p class="p1">Free marketing</p>
+              <p class="p2">
+                We do a free evaluation to be sure you want to start selling.
+              </p>
+              <a href="#">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RENT -->
+
+    <section class="rent">
+      <div class="sub-rent">
+        <h1 class="heading">Latest Properties of Rent</h1>
+        <p class="para">
+          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+          posuere cubilia curae; Proin sodales ultrices nulla blandit volutpat.
+        </p>
+        <div class="maingrid">
+          <div class="items">
+            <div class="img" class="swiper-slide">
+              <img src="./assets/Rent/img1.png" alt="image" />
+              <div class="offer">
+                <span class="span">Hot offer</span>
+                <span class="span">Sale</span>
+              </div>
+            </div>
+            <div class="flex1">
+              <div class="p1">
+                <p>92 ALLIUM PLACE, ORLANDO FL 32827</p>
+              </div>
+              <p class="price">$ 590,693</p>
+              <div class="flex12">
+                <div class="flex121">
+                  <img src="./assets/Rent/Car.svg" alt="car" class="car" />
+                  <p class="four">4</p>
+                </div>
+                <div class="flex122">
+                  <img
+                    src="./assets/Rent/Bathtub.svg"
+                    alt="Bathtub"
+                    class="bathtub"
+                  />
+                  <p class="four">4</p>
+                </div>
+                <div class="flex123">
+                  <img
+                    src="./assets/Rent/ArrowsOut.svg"
+                    alt="Area"
+                    class="area"
+                  />
+                  <p class="ft">2,096.00 ft</p>
+                </div>
+              </div>
+
+              <div class="flex13">
+                <div class="flex131">
+                  <img
+                    src="./assets/Rent/jenny.svg"
+                    alt="Photo"
+                    class="jennyimg"
+                  />
+                  <a href="#">
+                    <p class="jenny">Jenny Wilson</p>
+                  </a>
+                </div>
+                <div class="flex132">
+                  <a href="#"
+                    ><img
+                      src="./assets/Rent/share.svg"
+                      alt="share"
+                      class="share"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="./assets/Rent/heart.svg"
+                      alt="Wishlist"
+                      class="heart"
+                  /></a>
+                  <a href="#"
+                    ><img src="./assets/Rent/add.svg" alt="Add" class="add"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="img" class="swiper-slide">
+              <img src="./assets/Rent/img2.png" alt="image" />
+            </div>
+            <div class="flex1">
+              <div class="p1">
+                <p>92 ALLIUM PLACE, ORLANDO FL 32827</p>
+              </div>
+              <p class="price">$ 590,693</p>
+
+              <div class="flex12">
+                <div class="flex121">
+                  <img src="./assets/Rent/Car.svg" alt="car" class="car" />
+                  <p class="four">4</p>
+                </div>
+                <div class="flex122">
+                  <img
+                    src="./assets/Rent/Bathtub.svg"
+                    alt="Bathtub"
+                    class="bathtub"
+                  />
+                  <p class="four">4</p>
+                </div>
+                <div class="flex123">
+                  <img
+                    src="./assets/Rent/ArrowsOut.svg"
+                    alt="Area"
+                    class="area"
+                  />
+                  <p class="ft">2,096.00 ft</p>
+                </div>
+              </div>
+              <div class="flex13">
+                <div class="flex131">
+                  <img
+                    src="./assets/Rent/jenny2.svg"
+                    alt="Photo"
+                    class="jennyimg"
+                  />
+                  <a href="#">
+                    <p class="jenny">Jenny Wilson</p>
+                  </a>
+                </div>
+                <div class="flex132">
+                  <a href="#"
+                    ><img
+                      src="./assets/Rent/share.svg"
+                      alt="share"
+                      class="share"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="./assets/Rent/heart.svg"
+                      alt="Wishlist"
+                      class="heart"
+                  /></a>
+                  <a href="#"
+                    ><img src="./assets/Rent/add.svg" alt="Add" class="add"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="img" class="swiper-slide">
+              <img src="./assets/Rent/img3.png" alt="image" />
+            </div>
+            <div class="flex1">
+              <div class="p1">
+                <p>92 ALLIUM PLACE, ORLANDO FL 32827</p>
+              </div>
+              <p class="price">$ 590,693</p>
+              <div class="flex12">
+                <div class="flex121">
+                  <img src="./assets/Rent/Car.svg" alt="car" class="car" />
+                  <p class="four">4</p>
+                </div>
+                <div class="flex122">
+                  <img
+                    src="./assets/Rent/Bathtub.svg"
+                    alt="Bathtub"
+                    class="bathtub"
+                  />
+                  <p class="four">4</p>
+                </div>
+                <div class="flex123">
+                  <img
+                    src="./assets/Rent/ArrowsOut.svg"
+                    alt="Area"
+                    class="area"
+                  />
+                  <p class="ft">2,096.00 ft</p>
+                </div>
+              </div>
+              <div class="flex13">
+                <div class="flex131">
+                  <img
+                    src="./assets/Rent/jenny3.svg"
+                    alt="Photo"
+                    class="jennyimg"
+                  />
+                  <a href="#">
+                    <p class="jenny">Jenny Wilson</p>
+                  </a>
+                </div>
+                <div class="flex132">
+                  <a href="#"
+                    ><img
+                      src="./assets/Rent/share.svg"
+                      alt="share"
+                      class="share"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="./assets/Rent/heart.svg"
+                      alt="Wishlist"
+                      class="heart"
+                  /></a>
+                  <a href="#"
+                    ><img src="./assets/Rent/add.svg" alt="Add" class="add"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="img" class="swiper-slide">
+              <img src="./assets/Rent/img4.png" alt="image" />
+            </div>
+            <div class="flex1">
+              <div class="p1">
+                <p>92 ALLIUM PLACE, ORLANDO FL 32827</p>
+              </div>
+              <p class="price">$ 590,693</p>
+              <div class="flex12">
+                <div class="flex121">
+                  <img src="./assets/Rent/Car.svg" alt="car" class="car" />
+                  <p class="four">4</p>
+                </div>
+                <div class="flex122">
+                  <img
+                    src="./assets/Rent/Bathtub.svg"
+                    alt="Bathtub"
+                    class="bathtub"
+                  />
+                  <p class="four">4</p>
+                </div>
+                <div class="flex123">
+                  <img
+                    src="./assets/Rent/ArrowsOut.svg"
+                    alt="Area"
+                    class="area"
+                  />
+                  <p class="ft">2,096.00 ft</p>
+                </div>
+              </div>
+              <div class="flex13">
+                <div class="flex131">
+                  <img
+                    src="./assets/Rent/jenny.svg"
+                    alt="Photo"
+                    class="jennyimg"
+                  />
+                  <a href="#">
+                    <p class="jenny">Jenny Wilson</p>
+                  </a>
+                </div>
+                <div class="flex132">
+                  <a href="#"
+                    ><img
+                      src="./assets/Rent/share.svg"
+                      alt="share"
+                      class="share"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="./assets/Rent/heart.svg"
+                      alt="Wishlist"
+                      class="heart"
+                  /></a>
+                  <a href="#"
+                    ><img src="./assets/Rent/add.svg" alt="Add" class="add"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="img" class="swiper-slide">
+              <img src="./assets/Rent/img5.png" alt="image" />
+            </div>
+            <div class="flex1">
+              <div class="p1">
+                <p>92 ALLIUM PLACE, ORLANDO FL 32827</p>
+              </div>
+              <p class="price">$ 590,693</p>
+              <div class="flex12">
+                <div class="flex121">
+                  <img src="./assets/Rent/Car.svg" alt="car" class="car" />
+                  <p class="four">4</p>
+                </div>
+                <div class="flex122">
+                  <img
+                    src="./assets/Rent/Bathtub.svg"
+                    alt="Bathtub"
+                    class="bathtub"
+                  />
+                  <p class="four">4</p>
+                </div>
+                <div class="flex123">
+                  <img
+                    src="./assets/Rent/ArrowsOut.svg"
+                    alt="Area"
+                    class="area"
+                  />
+                  <p class="ft">2,096.00 ft</p>
+                </div>
+              </div>
+              <div class="flex13">
+                <div class="flex131">
+                  <img
+                    src="./assets/Rent/jenny2.svg"
+                    alt="Photo"
+                    class="jennyimg"
+                  />
+                  <a href="#">
+                    <p class="jenny">Jenny Wilson</p>
+                  </a>
+                </div>
+                <div class="flex132">
+                  <a href="#"
+                    ><img
+                      src="./assets/Rent/share.svg"
+                      alt="share"
+                      class="share"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="./assets/Rent/heart.svg"
+                      alt="Wishlist"
+                      class="heart"
+                  /></a>
+                  <a href="#"
+                    ><img src="./assets/Rent/add.svg" alt="Add" class="add"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="img" class="swiper-slide">
+              <img src="./assets/Rent/img6.png" alt="image" />
+            </div>
+            <div class="flex1">
+              <div class="p1">
+                <p>92 ALLIUM PLACE, ORLANDO FL 32827</p>
+              </div>
+              <p class="price">$ 590,693</p>
+              <div class="flex12">
+                <div class="flex121">
+                  <img src="./assets/Rent/Car.svg" alt="car" class="car" />
+                  <p class="four">4</p>
+                </div>
+                <div class="flex122">
+                  <img
+                    src="./assets/Rent/Bathtub.svg"
+                    alt="Bathtub"
+                    class="bathtub"
+                  />
+                  <p class="four">4</p>
+                </div>
+                <div class="flex123">
+                  <img
+                    src="./assets/Rent/ArrowsOut.svg"
+                    alt="Area"
+                    class="area"
+                  />
+                  <p class="ft">2,096.00 ft</p>
+                </div>
+              </div>
+              <div class="flex13">
+                <div class="flex131">
+                  <img
+                    src="./assets/Rent/jenny3.svg"
+                    alt="Photo"
+                    class="jennyimg"
+                  />
+                  <a href="#">
+                    <p class="jenny">Jenny Wilson</p>
+                  </a>
+                </div>
+                <div class="flex132">
+                  <a href="#"
+                    ><img
+                      src="./assets/Rent/share.svg"
+                      alt="share"
+                      class="share"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="./assets/Rent/heart.svg"
+                      alt="Wishlist"
+                      class="heart"
+                  /></a>
+                  <a href="#"
+                    ><img src="./assets/Rent/add.svg" alt="Add" class="add"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button><a href="#">Load more listing</a></button>
+      </div>
+      <!-- </div> -->
+    </section>
+
+    <!-- swiper rent2 -->
+
+    <!-- Swiper -->
+
+    <section class="swiper-rent2">
+      <div class="subrent2">
+        <h1>Latest Properties of Rent</h1>
+        <p>
+          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+          posuere cubilia curae; Proin sodales ultrices nulla blandit volutpat.
+        </p>
+      </div>
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img class="dim" src="./assets/rent2/img1.jpg" alt="image" />
+            <button class="button2"><a href="#">View Detail</a></button>
+            <div class="imgflex">
+              <div class="placeflex">
+                <img src="./assets/rent2/MapPin.svg" alt="map" class="spot" />
+                <p class="place">Washington</p>
+              </div>
+              <div class="areaflex">
+                <img
+                  src="./assets/Rent2/ArrowsOut.svg"
+                  alt="area"
+                  class="area"
+                />
+                <p class="area">12000</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img class="dim" src="./assets/rent2/img4.svg" alt="image" />
+            <button class="button2"><a href="#">View Detail</a></button>
+            <div class="imgflex">
+              <div class="placeflex">
+                <img src="./assets/rent2/MapPin.svg" alt="map" class="spot" />
+                <p class="place">Washington</p>
+              </div>
+              <div class="areaflex">
+                <img
+                  src="./assets/Rent2/ArrowsOut.svg"
+                  alt="area"
+                  class="area"
+                />
+                <p class="area">12000</p>
+              </div>
+              <div class="offer">
+                <p>Hot offer</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img class="dim" src="./assets/rent2/img2.svg" alt="image" />
+            <button class="button2"><a href="#">View Detail</a></button>
+            <div class="imgflex">
+              <div class="placeflex">
+                <img src="./assets/rent2/MapPin.svg" alt="map" class="spot" />
+                <p class="place">Washington</p>
+              </div>
+              <div class="areaflex">
+                <img
+                  src="./assets/Rent2/ArrowsOut.svg"
+                  alt="area"
+                  class="area"
+                />
+                <p class="area">12000</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img class="dim" src="./assets/rent2/img3.svg" alt="image" />
+            <button class="button2"><a href="#">View Detail</a></button>
+            <div class="imgflex">
+              <div class="placeflex">
+                <img src="./assets/rent2/MapPin.svg" alt="map" class="spot" />
+                <p class="place">Washington</p>
+              </div>
+              <div class="areaflex">
+                <img
+                  src="./assets/Rent2/ArrowsOut.svg"
+                  alt="area"
+                  class="area"
+                />
+                <p class="area">12000</p>
+              </div>
+              <div class="offer">
+                <p>Hot offer</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img class="dim" src="./assets/rent2/img4.svg" alt="image" />
+            <button class="button2"><a href="#">View Detail</a></button>
+            <div class="imgflex">
+              <div class="placeflex">
+                <img src="./assets/rent2/MapPin.svg" alt="map" class="spot" />
+                <p class="place">Washington</p>
+              </div>
+              <div class="areaflex">
+                <img
+                  src="./assets/Rent2/ArrowsOut.svg"
+                  alt="area"
+                  class="area"
+                />
+                <p class="area">12000</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img class="dim" src="./assets/rent2/img5.svg" alt="image" />
+            <button class="button2"><a href="#">View Detail</a></button>
+            <div class="imgflex">
+              <div class="placeflex">
+                <img src="./assets/rent2/MapPin.svg" alt="map" class="spot" />
+                <p class="place">Washington</p>
+              </div>
+              <div class="areaflex">
+                <img
+                  src="./assets/Rent2/ArrowsOut.svg"
+                  alt="area"
+                  class="area"
+                />
+                <p class="area">12000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="swiper-pagination"></div> -->
+      </div>
+      <div class="arrows">
+        <div class="arrowleft" onclick="plusSlides(-1)">
+          <img src="./assets/rent2/ArrowLeft.svg" alt="left" />
+        </div>
+        <div class="arrowright" onclick="plusSlides(+1)">
+          <img src="./assets/rent2/arrowright.svg" alt="right" />
+        </div>
+      </div>
+    </section>
+
+    <!-- living -->
+
+    <section class="living">
+      <div class="livingflex">
+        <h1 class="heading">Find Best Place For Living</h1>
+        <p class="subheading">
+          Spend vacations in best hotels and resorts find the great place of
+          your choice using different searching options.
+        </p>
+        <button><a href="#">Contact Us</a></button>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="mainflex">
+        <div class="subflex2">
+          <div class="subflexa">
+            <div class="subflex" id="contactus">
+              <div class="subflex1">
+                <img src="./assets/footer/logo.svg" alt="Logo" class="logo" />
+              </div>
+              <h1 class="heading" id="contact-us">Contact Us</h1>
+              <p class="description"><a href="#">Call : +123 400 123</a></p>
+              <p class="description">
+                Praesent nulla massa, hendrerit vestibulum gravida in, feugiat
+                auctor felis.
+              </p>
+              <p id="email">Email:example@mail.com</p>
+              <div class="logoflex">
+                <a href="#"><img src="./assets/footer/facebook.svg" alt="facebook" /></a>
+                <a href="#"><img src="./assets/footer/browser.svg" alt="browser" /></a>
+                <a href="#"><img src="./assets/footer/linkedin.svg" alt="LinkedIn" /></a>
+                <a href="#"><img src="./assets/footer/ig.svg" alt="Instagram" /></a>
+                <a href="#"><img src="./assets/footer/behance.svg" alt="Behance" /></a>
+              </div>
+            </div>
+            <div class="subflex">
+              <h1 class="heading">Features</h1>
+              <p class="description"><a href="#">Home</a></p>
+              <p class="description"><a href="#">Become a Host</a></p>
+              <p class="description"><a href="#">Pricing</a></p>
+              <p class="description"><a href="#">Blog</a></p>
+              <p class="description"><a href="#">Contact</a></p>
+            </div>
+          </div>
+          <div class="subflexb">
+            <div class="subflex">
+              <h1 class="heading">Company</h1>
+              <p class="description"><a href="#">About Us</a></p>
+              <p class="description"><a href="#">Press</a></p>
+              <p class="description"><a href="#">Contact</a></p>
+              <p class="description"><a href="#">Careers</a></p>
+              <p class="description"><a href="#">Blog</a></p>
+            </div>
+            <div class="subflex">
+              <h1 class="heading">Team and policies</h1>
+              <p class="description"><a href="#">Terms of servies</a></p>
+              <p class="description"><a href="#">Privacy Policy</a></p>
+              <p class="description"><a href="#">Security</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 15,
+        loop:true,
+        // pagination: {
+        //   el: ".swiper-pagination",
+        //   clickable: true,
+        // },
+        breakpoints: {
+          0: {
+            slidesPerView:1.5
+          },
+          900: {
+            slidesPerView:3.5
+          },
+          1220: {
+            slidesPerView:4.5
+          },
+        },
+        navigation: {
+            nextEl: '.arrowright',
+            prevEl: '.arrowleft',
+         },
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const buttons = document.querySelectorAll(".toggle-button");
+        const containers = document.querySelectorAll(".toggle-container");
+
+        buttons.forEach((button) => {
+          button.addEventListener("mouseover", () => {
+            buttons.forEach((btn) => btn.classList.remove("active"));
+            containers.forEach(
+              (container) => (container.style.display = "none")
+            );
+
+            const relatedContainer = document.getElementById(
+              `container${button.id.replace("button", "")}`
+            );
+            relatedContainer.style.display = "flex";
+          });
+
+          button.addEventListener("click", () => {
+            buttons.forEach((btn) => btn.classList.remove("active"));
+            containers.forEach(
+              (container) => (container.style.display = "none")
+            );
+
+            button.classList.add("active");
+            const relatedContainer = document.getElementById(
+              `container${button.id.replace("button", "")}`
+            );
+            relatedContainer.style.display = "flex";
+          });
+        });
+
+        document.addEventListener("click", (e) => {
+          if (!e.target.classList.contains("toggle-button")) {
+            buttons.forEach((btn) => btn.classList.remove("active"));
+            containers.forEach(
+              (container) => (container.style.display = "none")
+            );
+          }
+        });
+      });
+
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </body>
+</html>
